@@ -1,0 +1,29 @@
+
+.dots{
+    width: 10px !important;
+    height: 10px !important;
+    
+}
+.bg-cyan{
+    background-color: cyan !important;
+}
+hr{
+    width: 100px;
+    padding: 5px;
+    background-color: #ffc106;
+}
+@media screen and (min-width){
+    body{
+        width: 100%;
+    }
+}
+.sub_catagory{
+    width: 40%;
+}
+.zoom{
+    transition: 0.5s all ease-in-out;
+}
+.zoom:hover{
+    transform: scale(1.5);
+
+}
