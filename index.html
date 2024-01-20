@@ -17,7 +17,7 @@
     <!-- HEADER START -->
     <header >
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img class="w-75" src="images/logo.png" alt="">
@@ -28,17 +28,28 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  <a class="nav-link" href="#">Product</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#Smartphone">Smartphone</a></li>
+                      <li><a class="dropdown-item" href="#Laptop">Laptop</a></li>
+                      <li><a class="dropdown-item" href="#Catagories">Catagories</a></li>
+                    </ul>
+                  </li>
                   <a class="nav-link" href="#">About us</a>
                   <a class="nav-link" href="#">Contact us</a>
+
+                  <!-- Login -->
+                  
                 </div>
               </div>
             </div>
           </nav>
 
           <!-- Banner Slider -->
-          <section class="container">
-            <div class="container">
+          <section class="container my-5">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
@@ -49,16 +60,18 @@
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <div class="row align-items-center my-5">
-                                <div class="col-lg-7  ">
-                                    <h1 class="fw-bold">Macbook Pro
-                                    </h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis.
-                    
-                                    </p>
-                                    <h2 class="fw-bold">$4500</h2>
-                                    <button type="button" class="btn btn-dark text-white my-3 px-4">Buy Now
-                                        <i class="fa-solid fa-arrow-right ps-1"></i>
-                                    </button>
+                                <div class="col-lg-7 ">
+                                    <div class="ps-5">
+                                      <h1 class="fw-bold">Macbook Pro
+                                      </h1>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis.
+                      
+                                      </p>
+                                      <h2 class="fw-bold">$4500</h2>
+                                      <button type="button" class="btn btn-dark text-white my-3 px-4">Buy Now
+                                          <i class="fa-solid fa-arrow-right ps-1"></i>
+                                      </button>
+                                    </div>
                                 </div>
                                 <div class="col-lg-5">
                                     <img  src="images/banner-products/product-1.png" class="d-block w-100 img-fluid" alt="...">
@@ -68,7 +81,8 @@
                           <div class="carousel-item">
                             <div class="row align-items-center my-5">
                                 <div class="col-lg-7  ">
-                                    <h1 class="fw-bold">Amazon Echo</h1>
+                                    <div class="ps-5">
+                                      <h1 class="fw-bold">Amazon Echo</h1>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis.
                     
                                     </p>
@@ -76,6 +90,7 @@
                                     <button type="button" class="btn btn-dark text-white my-3 px-4">Buy Now
                                         <i class="fa-solid fa-arrow-right ps-1"></i>
                                     </button>
+                                    </div>
                                 </div>
                                 <div class="col-lg-5">
                                     <img  src="images/banner-products/slider-1.png" class="d-block w-100 img-fluid" alt="...">
@@ -85,15 +100,17 @@
                           <div class="carousel-item">
                             <div class="row align-items-center my-5">
                                 <div class="col-lg-7  ">
-                                    <h1 class="fw-bold">Boom boom boom Box
-                                    </h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis.
-                    
-                                    </p>
-                                    <h2 class="fw-bold">$1500</h2>
-                                    <button type="button" class="btn btn-dark text-white my-3 px-4">Buy Now
-                                        <i class="fa-solid fa-arrow-right ps-1"></i>
-                                    </button>
+                                    <div class="ps-5">
+                                      <h1 class="fw-bold">Boom boom boom Box
+                                      </h1>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, reiciendis.
+                      
+                                      </p>
+                                      <h2 class="fw-bold">$1500</h2>
+                                      <button type="button" class="btn btn-dark text-white my-3 px-4">Buy Now
+                                          <i class="fa-solid fa-arrow-right ps-1"></i>
+                                      </button>
+                                    </div>
                                 </div>
                                 <div class="col-lg-5">
                                     <img  src="images/banner-products/slider-3.png" class="d-block w-100 img-fluid" alt="...">
@@ -101,17 +118,16 @@
                             </div>
                           </div>
                         </div>
-                        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <button class="carousel-control-prev pre_next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <button class="carousel-control-next pre_next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon " aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
                       </div>
                 </div>
-            </div>
           </section>
 
     </header>
@@ -120,7 +136,7 @@
     <!-- MAIN START -->
     <main>
         <!-- Smartphone Section -->
-        <section class="container my-3">
+        <section id="Smartphone" class="container my-3">
             <h2 class="fw-bold">Smart Phones</h2>
             <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4 my-2">
                 <div class="col ">
@@ -167,7 +183,7 @@
         </section>
 
         <!-- Laptop Section -->
-        <section class="container my-5">
+        <section id="Laptop" class="container my-5">
             <h2 class= "fw-bold">Laptop</h2>
             <div class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4 my-2">
                 <div class="col ">
@@ -214,7 +230,7 @@
         </section>
 
         <!-- Catagories Section -->
-        <section class="container">
+        <section id="Catagories" class="container">
             <h1 class="text-center fw-bold" >Catagories</h1>
             <hr class="border-0 ms-auto  me-auto
             ">
@@ -257,6 +273,7 @@
     <!-- FOOTER START -->
     <footer class="text-center mt-4">
         <p>©2023. Hot-Gadgets. All rights reserved. Sofia, Bulgaria.</p>
+        
     </footer>
     <!-- FOOTER END -->
 

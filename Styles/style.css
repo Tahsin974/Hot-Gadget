@@ -27,3 +27,6 @@ hr{
     transform: scale(1.5);
 
 }
+.pre_next{
+    width: 4% !important;
+}
